@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AccessingTheScopeStorage</string>
+    <string name="bucket_id">Bucket_ID:</string>
+    <string name="id">ID:</string>
+    <string name="size">SIZE:</string>
+    <string name="bucket">BUCKET:</string>
+    <string name="date">DATE:</string>
+    <string name="name">NAME:</string>
+    <string name="data_uri">DATA_URI:</string>
+</resources>

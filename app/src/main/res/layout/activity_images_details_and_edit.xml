@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_images_details_and_edit_scene"
+    tools:context=".ImagesDetailsAndEdit">
+
+    <ImageView
+        android:id="@+id/image_iv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="731dp">
+
+        <TextView
+            android:id="@+id/bucket_id_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="8dp"
+            android:text="@string/bucket_id" />
+
+        <TextView
+            android:id="@+id/id_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bucket_id_tv"
+            android:layout_marginBottom="8dp"
+            android:text="@string/id" />
+
+        <TextView
+            android:id="@+id/size_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_tv"
+            android:layout_marginBottom="8dp"
+            android:text="@string/size" />
+
+        <TextView
+            android:id="@+id/bucket_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/size_tv"
+            android:layout_marginBottom="8dp"
+            android:text="@string/bucket" />
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bucket_tv"
+            android:layout_marginBottom="8dp"
+            android:text="@string/date" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_tv"
+            android:layout_marginBottom="8dp"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/data_uri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_tv"
+            android:text="@string/data_uri" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
